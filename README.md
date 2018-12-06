@@ -15,3 +15,4 @@
 - `AWS_PROFILE=lfda-tf kubectl cluster-info` -> `Kubernetes master is running at https://0000000000000000000000000000.sk1.us-west-2.eks.amazonaws.com`.
 - `AWS_PROFILE=lfda-tf kubectl apply -f manifests/config_map.yml` --> `configmap/aws-auth created`
 - You can now do `export AWS_PROFILE=lfda-tf`, followed by `kubectl get nodes`. You should now get 2 nodes.
+- To make an example Kubernetes application (very simple) follow `example/README.md`.
