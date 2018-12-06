@@ -2,3 +2,4 @@
 /cluster_setup_manifests/*.yml
 /*.tfstate
 /*.tfstate.backup
+/health/health_on_k8s.sh

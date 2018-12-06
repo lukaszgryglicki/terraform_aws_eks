@@ -19,4 +19,25 @@ spec:
       - name: ekshealthtest
         image: docker.io/lukaszgryglicki/ekshealthtest
         ports:
-        - containerPort: 8888
+        - containerPort: ${EKS_HEALTH_PORT}
+        env:
+        - name: PG_SSL
+          value: "${PG_SSL}"
+        - name: PG_HOST
+          value: "${PG_HOST}"
+        - name: PG_PORT
+          value: "${PG_PORT}"
+        - name: PG_USER
+          value: "${PG_USER}"
+        - name: PG_DB
+          value: "${PG_DB}"
+        - name: PG_PASS
+          value: "${PG_PASS}"
+        - name: ES_HOST
+          value: "${ES_HOST}"
+        - name: ES_PORT
+          value: "${ES_PORT}"
+        - name: ES_PROTO
+          value: "${ES_PROTO}"
+        - name: EKS_HEALTH_PORT
+          value: "${EKS_HEALTH_PORT}"
