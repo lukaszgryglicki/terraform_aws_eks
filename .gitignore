@@ -1,1 +1,4 @@
 /.terraform
+/manifests/*.yml
+/*.tfstate
+/*.tfstate.backup

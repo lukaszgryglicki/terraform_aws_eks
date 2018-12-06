@@ -7,5 +7,7 @@
 - `unzip terraform_0.11.10_linux_amd64.zip`.
 - `rm terraform_0.11.10_linux_amd64.zip`.
 - `mv terraform /usr/bin/`.
-- `terraform init`.
-- `terraform apply`
+- `AWS_PROFILE=lfda-tf terraform init`.
+- `AWS_PROFILE=lfda-tf terraform plan`.
+- `AWS_PROFILE=lfda-tf terraform apply`.`
+- Put outputs config in the manifests directory: `config_map.yml kube_config.yml`.
