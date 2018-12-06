@@ -1,4 +1,4 @@
 /.terraform
-/manifests/*.yml
+/cluster_setup_manifests/*.yml
 /*.tfstate
 /*.tfstate.backup
