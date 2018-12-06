@@ -4,7 +4,7 @@ then
   echo "usage: AWS_PROFILE=... ${0}"
   exit 1
 fi
-# kubectl create deployment ekshealthtest --image="docker.io/lukaszgryglicki/ekshealthtest"
+kubectl apply -f health_deployment.yaml
 kubectl get deployments
 kubectl expose deployment ekshealthtest --type=LoadBalancer --port=8888
 kubectl get po

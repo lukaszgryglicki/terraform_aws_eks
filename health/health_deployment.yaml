@@ -1,0 +1,22 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: ekshealthtest
+  name: ekshealthtest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ekshealthtest
+  template:
+    metadata:
+      labels:
+        app: ekshealthtest
+    spec:
+      containers:
+      - name: ekshealthtest
+        image: docker.io/lukaszgryglicki/ekshealthtest
+        ports:
+        - containerPort: 8888
