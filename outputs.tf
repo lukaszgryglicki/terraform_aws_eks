@@ -49,6 +49,7 @@ users:
         - "${var.cluster-name}"
 KUBECONFIG
   vpc_id = "${aws_vpc.demo.id}"
+  base_vpc_id = "${module.base_vpc.vpc_id}"
 }
 
 output "config_map_aws_auth" {
@@ -61,4 +62,8 @@ output "kubeconfig" {
 
 output "vpc_id" {
   value = "${local.vpc_id}"
+}
+
+output "base_vpc_id" {
+  value = "${local.base_vpc_id}"
 }
