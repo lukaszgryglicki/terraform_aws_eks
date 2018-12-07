@@ -16,3 +16,4 @@
 - `AWS_PROFILE=lfda-tf kubectl apply -f cluster_setup_manifests/config_map.yml` --> `configmap/aws-auth created`
 - You can now do `export AWS_PROFILE=lfda-tf`, followed by `kubectl get nodes`. You should now get 2 nodes.
 - To make an example Kubernetes application (very simple) follow `example/README.md`.
+- Then install health check app `health/README.md`.
